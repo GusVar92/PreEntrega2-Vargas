@@ -1,0 +1,285 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    text-align: center;
+    background-color: #86BBD8;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    margin: 20px;
+}
+
+
+/* Imagen del NavBar*/
+.imghome {
+    position: static;
+    right: 200px;
+    height: 120px;
+}
+
+/*NavBar*/
+.menunav{
+    width: 100%;
+    background-color: #2660a4;
+    border-style: double;
+}
+
+.menu li {
+    position: relative;
+    bottom: 45px;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Color de los links en la NavBar*/
+.menu li a{
+    color: rgb(0, 0, 0)
+}
+
+/*Pseudo-clase en NavBar*/
+.menu li a:hover{
+    color: yellow;
+    outline : 5px solid red;
+}
+
+.menu li a:active{
+    color: orange;
+    outline : 5px solid green;
+}
+
+/*Contenedor Home*/
+.contenedor {
+    display: inline-flex;
+    text-decoration: none;
+}
+
+/*Contenedor de imagenes de muebles en Home*/
+.contenedor2 {
+    margin: 25px 0px 25px 0px;
+    display: inline-flex;
+    height: 250px;
+    width: auto;
+}
+
+.contenedor2 img {
+    border-radius: 10%;
+    margin-right: 15px;
+    width: 300px;
+    height: auto;
+}
+
+/*Descripcion Home*/
+.descripcion{
+    margin: auto;
+    padding: 25px;
+    width: 500px;
+    height: 500px;
+}
+
+/*Parrafos*/
+main div aside p {
+    font-size: 22px;
+    text-align: left;
+}
+
+/*Boton para redirecion a Sobre nosotros*/
+main div aside p button {
+    font-size: 21px;
+    height: 25px;
+    background-color: rgb(108, 129, 187);
+    border-style: outset;
+}
+
+/*Footer*/
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2.5px;
+    border-top: solid;
+    width: 100%;
+    display: inline-flex;
+    background-color: #475841;
+}
+
+footer h3 {
+    margin-left: 50px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+footer img{
+    margin: 0 10px 0 ;
+}
+
+.footerimg {
+    margin-left: 800px;
+}
+
+/*Articulos de Compra - Seccion productos*/
+
+.descripcion2{
+    padding: auto;
+    font-size: 18px;
+    text-align: center;
+    margin: 25px 250px 25px 250px;
+}
+
+.subcontacto{
+    color: black;
+}
+.titleprod{
+    padding-top: 100px;
+    margin: 10px 10px 0 0;
+    text-decoration: underline;
+}
+
+.imgprod{
+    width: 350px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.contenedorprod{
+    border-style: groove;
+    border-width: 5px;
+    display: inline-flex;
+    padding: 15px;
+    margin: 10px 150px 0 150px;
+}
+
+.descripcionProd{
+    text-align: left;
+    margin: 25px;
+    font-size: 18px;
+}
+
+.precio{
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+.botonCompra{
+    position: relative;
+    top: 90px;
+    margin: 15px;
+    height: 30px;
+}
+
+/*Metodos de pago*/
+
+.metodosPago{
+    padding: 15px;
+}
+
+.pieImg{
+    padding: auto;
+    font-size: 18px;
+}
+
+.contenedor3 {
+    margin: 50px 0px 25px 0px;
+    display: inline-flex;
+    height: 250px;
+    width: auto;
+}
+
+.contenedor3 p{
+    position: relative;
+    bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contenedor3 img{
+    border-radius: 10%;
+    margin-right: 15px;
+    height: 300px;
+    height: 250px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+/*Contacto*/
+
+form{
+    margin-top: 20px;
+}
+
+label{
+    margin: 15px;
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.formulario{
+    padding: 0 5px;
+}
+
+.formulario .input{
+
+}
+
+.formCont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario #btnForm{
+    display: flex;
+}
+
+.botonForm{
+    width: auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.botonForm:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+/*GPS*/
+
+.gps{
+    padding: 25px;
+    margin: 10px;
+}
+
