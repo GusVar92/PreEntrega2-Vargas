@@ -6,7 +6,6 @@
 }
 
 /* Desarrollo Mobile First */
-
 /* Estilos generales */
 body {
     background-color: #86BBD8;
@@ -22,6 +21,11 @@ h1 {
     margin: 2rem;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
 }
 
 /* No olvidar colocar :active  en las media querys para los links a otras paginas */
@@ -117,8 +121,8 @@ footer .logosRedir a img{
 
 .generalProd{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
     padding-bottom: 20px;
 }
 
@@ -135,21 +139,21 @@ footer .logosRedir a img{
 .contenedorProd .titleProd{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
+    padding: 7px;
 }
 
 .contenedorProd .imgProd{
     height: 70%;
     padding: 5px 15px;
+    border-radius: 7.5%;
 }
 
 .contenedorProd .descripcionProd{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
     margin: 5px;
     padding: 2px;
     overflow: auto;
     text-align: center;
-    
 }
 
 .contenedorProd .bloqPrecio{
@@ -223,3 +227,135 @@ footer .logosRedir a img{
 }
 
 /* Media Querys */
+
+@media (min-width: 720px) {
+    /* Correccion en version Tablet a la seccion de productos*/
+    .generalProd{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .contCards .card .imgCard{
+        padding-bottom: 15px;
+        height: 14em;
+        width: 15em;
+    }
+
+    /* Seccion Metodos de Pago*/
+    .metodosPago img{
+        height: 60vh;
+    }
+}
+
+@media (min-width: 1200px){
+    /* Adaptacion a Desktop */
+    /* HOME */
+    header nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav ul{
+        margin-right: 15px;
+    }
+
+    header nav ul li{
+        font-size: 1.4em;
+    }
+
+
+    header nav ul li a:hover{
+        color: gainsboro;
+        transition: 0.5s;
+    }
+
+    header nav ul li:first-child{
+        display: flex;
+    }
+
+    header nav div .imghome {
+        margin-left: 50px;
+        height: 100px;
+    }
+
+    .contenedor{
+        flex-direction: row;
+        padding: 0 15em;
+    }
+
+    .contenedor div {
+        display: flex;
+        align-items: center;
+        font-size: 1.4em;
+    }
+
+    .descripcion .btnVer{
+        display: inline-block;
+    }
+
+    .descripcion .btnVer button{
+        font-size: 1em;
+        border: 2px solid rgb(110, 136, 112);
+        background-color: rgb(110, 136, 112);
+        border-radius: 5px;
+    }
+
+    .imgPreviasHome{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imgPreviasHome .contenedor2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgPreviasHome .contenedor2 img{
+        margin: 1em 0;
+        padding: 1em;
+        width: auto;
+        height: 350px;
+        border-radius: 15%;
+    }
+
+    footer{
+        flex-direction: row;
+        padding: 1em;
+    }
+
+    /*Seccion de Productos*/
+    .generalProd{
+        padding: 0 2em 30px 2em;
+        gap: 10px;
+    }
+
+    footer .logosRedir {
+        gap: 1rem;
+    }
+
+    .contenedorProd .descripcionProd{
+        overflow: hidden;
+    }
+    .contenedorProd .bloqPrecio{
+        padding: 15px;
+    }
+
+    /* Seccion Metodos de Pago */
+    .metodosPago{
+        display: flex;
+        justify-content: center;
+    }
+    .metodosPago img{
+        width: 90%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    /* Seccion Sobre Nosotros "About Us" */
+    .contCards{
+        display: flex;
+    }
+
+}
