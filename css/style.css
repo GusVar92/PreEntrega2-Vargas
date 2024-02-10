@@ -332,10 +332,6 @@ footer .logosRedir a img{
     }
 
     /*Seccion de Productos*/
-
-    #parraProds{
-        display: block;
-    }
     .generalProd{
         padding: 0 2em 30px 2em;
         gap: 10px;
