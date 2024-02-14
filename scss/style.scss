@@ -1,0 +1,262 @@
+//import
+@import "./utilities/variable";
+/*Reset*/
+@import "./utilities/reset";
+/*Estilos generales*/
+@import "./utilities/general";
+/*Footer*/
+@import "./utilities/footer";
+
+/*Pagina Principal*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+
+    div {
+        .descripcion {
+            font-family: $fuente-principal;
+            text-align: center;
+            padding: 0 1rem 2rem 1rem;
+
+            .btnVer {
+                display: none;
+            }
+        }
+    }
+}
+
+.imgPreviasHome {
+    display: none;
+}
+
+/*Seccion de Productos*/
+#parraProds {
+    display: none;
+    font-family: $fuente-principal;
+    text-align: center;
+    padding: 0 1rem 2rem 1rem;
+}
+
+.generalProd {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-bottom: 20px;
+
+    .contenedorProd {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px;
+        border: 5px solid #393939;
+        border-radius: 15px;
+        overflow: auto;
+
+        .titleProd {
+            font-family: $fuente-principal;
+            text-align: center;
+            padding: 7px;
+        }
+
+        .imgProd {
+            height: 70%;
+            padding: 5px 15px;
+            border-radius: 15%;
+        }
+
+        .descripcionProd {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 5px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .bloqPrecio {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+            .botonCompra {
+                font-weight: bold;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+/*Seccion Metodos de Pago*/
+.metodosPago {
+    img {
+        width: 100%;
+        height: 45vh;
+        padding: 0 10px;
+    }
+}
+
+.pieImg {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px;
+}
+
+/*Sección "Sobre Nosotros"*/
+
+.contCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+    padding-bottom: 2em;
+    justify-content: center;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px;
+        padding: 15px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        background-color: $color-secundario;
+
+        .imgCard {
+            justify-self: center;
+            align-self: center;
+            width: 7.5em;
+            height: 9em;
+            border-radius: 5px;
+        }
+    }
+
+    .cardTitulo {
+        padding: 0 5px 10px 5px;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+}
+
+/*Seccón Contacto*/
+.gps {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    padding: 15px 0;
+}
+
+/*Media Queries*/
+@media (min-width: 720px) {
+
+    /*Seccion Producctos*/
+    .generalProd {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    /* Seccion Metodos de Pago*/
+    .metodosPago img {
+        height: 60vh;
+    }
+
+    /*Sección Sobre Nosotros*/
+    .contCards {
+        .card {
+            .imgCard {
+                padding-bottom: 15px;
+                height: 14em;
+                width: 15em;
+            }
+        }
+    }    
+}
+
+@media (min-width: 1024px){
+    .contenedor{
+        flex-direction: row;
+        padding: 0 9em;
+
+        div{
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+
+            .descripcion{
+                .btnVer{
+                    display: inline-block;
+                    button{
+                        font-size: 1em;
+                        border: 2px solid rgb(110, 136, 112);
+                        background-color: rgb(110, 136, 112);
+                        border-radius: 5px;                
+                    }
+                    button:hover{
+                        cursor: pointer;
+                        background-color: rgb(52, 119, 58);
+                        transition: 0.5s;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .imgPreviasHome{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .contenedor2{
+            display: flex;
+            justify-content: center;
+            img{
+                margin: 1em 0;
+                padding: 1em;
+                width: auto;
+                height: 300px;
+                border-radius: 15%;        
+            }
+        }
+    }
+
+    footer{
+        flex-direction: row;
+        padding: 1rem;
+        .logosRedir{
+            gap: 1rem;
+        }
+    }
+
+    /*Sección Productos*/
+    .generalProd{
+        padding: 0 2em 30px 2em;
+        gap: 10px;
+        .contenedorProd{
+            .descripcionProd{
+                overflow: hidden;
+            }
+            .bloqPrecio{
+                padding: 10px;
+                button:hover{
+                    cursor: pointer;
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+    /*Sección Metodos de Pago*/
+    .metodosPago{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 90%;
+            height: auto;
+        }
+    }
+
+    /*Sección Sobre Nosotros "About Us*/
+    .contCards{
+        display: flex;
+    }
+}
