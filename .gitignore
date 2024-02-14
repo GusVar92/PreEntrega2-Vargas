@@ -1,0 +1,7 @@
+#Ignora Carpeta
+/.vscode
+
+#Ignora archivos
+/css/style.css.map
+Wireframes.txt
+package.json
