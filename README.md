@@ -3,7 +3,7 @@
 ## Cambios
 
 -Se reescribrio todo el codigo CSS para utilizando el metodo de Mobile First. <br>
--Se agrego media queries para que sea responsive. <br>
+-Se agrego media queries (720px y 1024px). <br>
 -Se implemento bootstrap en la seccion de contactos. <br>
 
 ### Links de los Wireframes
