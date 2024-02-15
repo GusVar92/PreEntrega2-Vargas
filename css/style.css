@@ -249,6 +249,9 @@ footer .logosRedir a img {
     gap: 1rem;
   }
   /*Sección Productos*/
+  #parraProds {
+    display: block;
+  }
   .generalProd {
     padding: 0 2em 30px 2em;
     gap: 10px;
@@ -273,6 +276,9 @@ footer .logosRedir a img {
     height: auto;
   }
   /*Sección Sobre Nosotros "About Us*/
+  #aboutDesc {
+    margin: 0 1rem;
+  }
   .contCards {
     display: flex;
   }
