@@ -1,11 +1,13 @@
-# Pre-Entrega 2
+# Pre-Entrega 3
 
 ## Cambios
 
 -Se reescribrio todo el codigo CSS para utilizando el metodo de Mobile First. <br>
 -Se agrego media queries (720px y 1024px). <br>
 -Se implemento Bootstrap. <br>
--Se implemento Sass (variables, nesting, etc).
+-Se implemento Sass (variables, nesting, etc). <br>
+-Se implemento SEO y Description. <br>
+-Se agrego animaciones en el navbar. <br>
 
 ### Links de los Wireframes
 
