@@ -1,6 +1,7 @@
 /.vscode
-/scss
 /css/style.css.map
 Wireframes.txt
 package.json
 .gitignore
+
+ignorame.html
